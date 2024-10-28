@@ -9,7 +9,7 @@ const Auth = ({ setUser }) => {
     e.preventDefault();
     const endpoint = isLogin ? '/login' : '/signup';
     try {
-      const response = await axios.post(`http://localhost:5555${endpoint}`, formData);
+      const response = await axios.post(`https://testing-render-demo.onrender.com${endpoint}`, formData);
       setUser(response.data);
     } catch (error) {
       console.error(error.response.data);

@@ -6,7 +6,7 @@ const Restaurants = ({ setSelectedRestaurant }) => {
 
   useEffect(() => {
     const fetchRestaurants = async () => {
-      const response = await axios.get('http://localhost:5555/restaurants');
+      const response = await axios.get('https://testing-render-demo.onrender.com/restaurants');
       setRestaurants(response.data);
     };
     fetchRestaurants();

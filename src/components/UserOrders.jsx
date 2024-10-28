@@ -6,7 +6,7 @@ const UserOrders = () => {
 
   useEffect(() => {
     const fetchOrders = async () => {
-      const response = await axios.get('http://localhost:5555/user/orders', { withCredentials: true });
+      const response = await axios.get('https://testing-render-demo.onrender.com/user/orders', { withCredentials: true });
       setOrders(response.data.orders);
     };
     fetchOrders();
